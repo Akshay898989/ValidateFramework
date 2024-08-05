@@ -5,15 +5,9 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Akshay898989/ValidateFramework"
   s.license          = 'MIT'
   s.author           = { "Akshay Gupta" => "akshay@neurosensum.com" }
-  s.source           = { :git => "https://github.com/Akshay898989/ValidateFramework.git", :branch => 'feature/akshay' }
-
+  s.source           = { :http => 'https://github.com/Akshay898989/ValidateFramework/releases/download/0.0.1/TestingFramework.zip' }
   s.ios.deployment_target = '12.0'
-  s.swift_version = '5.0'
-  s.requires_arc = true
-  #s.source_files = 'TestingFramework/Sources/**/*.{h,m,swift}'
-  s.vendored_frameworks = 'TestingFramework/TestingFramework.framework'
-  s.resource_bundles = {
-    'TestingFramework' => ['TestingFramework/Sources/Assets/*.png']
-}
-
+  s.swift_version    = '5.0'
+  s.requires_arc     = true
+  s.ios.vendored_frameworks = 'TestingFramework.xcframework'
 end

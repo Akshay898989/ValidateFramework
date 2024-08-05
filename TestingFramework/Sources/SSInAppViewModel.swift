@@ -51,7 +51,7 @@ class SSInAppViewModel{
             
             if let data = data {
                 do {
-                    let jsonString = String(data: data, encoding: .utf8)
+                    //let jsonString = String(data: data, encoding: .utf8)
                     //print("Response JSON String: \(jsonString ?? "Empty JSON")")
                     
                     let decoder = JSONDecoder()
